@@ -1,3 +1,5 @@
+[![CI](https://github.com/SodaqMoja/Sodaq_R4X/workflows/CI/badge.svg)](https://github.com/SodaqMoja/Sodaq_R4X/actions?query=workflow%3ACI)
+
 # Sodaq_R4X
 
 Arduino library for using with the SARA R4X. Tested on Sodaq SARA R410 and R412.
