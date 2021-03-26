@@ -42,7 +42,5 @@ jobs:
           python -m pip install --upgrade pip
           pip install --upgrade platformio
       - name: Build application
-        env:
-          PLATFORMIO_CI_SRC: ${{ matrix.example }}
         run: |
-          pio ci --lib="./src" --project-option="buildflags = -D VODAFONE_LTEM" --board=${{ matrix.board }}
+          pio ci --lib="./src" --project-option="buildflags = -DVODAFONE_LTEM=1" --board=${{ matrix.board }} ${{ matrix.example }}
