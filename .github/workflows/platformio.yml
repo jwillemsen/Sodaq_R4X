@@ -45,4 +45,4 @@ jobs:
         env:
           PLATFORMIO_CI_SRC: ${{ matrix.example }}
         run: |
-          pio ci --lib="./src" --board=${{ matrix.board }}
+          pio ci --lib="./src" --project-option="buildflags = -D VODAFONE_LTEM" --board=${{ matrix.board }}
